@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsMusicNoteList } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -14,9 +15,12 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <div>
-            <h1 className='p-3 font-bold text-xl'>
+        <div className='flex items-baseline'>
+            <h1 className='py-3 font-bold text-xl'>
                 Music App
+            </h1>
+            <h1 className='center pr-4 text-xl'>
+                <BsMusicNoteList/>
             </h1>
         </div>
     </div>
